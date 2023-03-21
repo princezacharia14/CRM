@@ -10,7 +10,7 @@ db.connectToMongoDB();
 
 app.use(express.json());
 
-app.use(process.env.API_VERSION , require('./app/modules/user/uer.route'));
+app.use(process.env.API_VERSION , require('./app/modules/user/user.route'));
 
 
 

@@ -1,8 +1,8 @@
 require('dotenv').config();
 const express = require('express');
-const createUser = require('./create');
+const loginUser = require('./login');
 const router = express.Router();
 
-router.get('/user', (req,res) => { createUser(req, res)});
+router.get('/login', (req,res) => { loginUser(req, res)});
 
 module.exports = router;
